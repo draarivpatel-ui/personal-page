@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aariv Patel | Systems, Design &amp; Open-Source Tools</title>
+  <meta name="description" content="Personal drafting table and portfolio of Aariv Patel, freshman at Dulles High School, founder of the Digital Design Club, and builder of open-source developer tools and nonprofit web software." />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%230b0f17' stroke='%23e05a2b' stroke-width='4'/%3E%3Ctext x='14' y='46' font-family='monospace' font-weight='700' font-size='38' fill='%23f4f1ea'%3Ea.%3C/text%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="blueprint-grid" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="#about" class="brand" aria-label="Aariv Patel Home">
+        <span class="monogram" aria-hidden="true">a.</span>
+        <div class="brand-meta">
+          <span class="brand-name">Aariv Patel</span>
+          <span class="brand-sheet">SHEET 01 // REV 2026.10</span>
+        </div>
+      </a>
+
+      <nav class="site-nav" aria-label="Primary sections">
+        <a href="#about" class="nav-link active" data-section="about">
+          <span class="nav-key">1</span> About
+        </a>
+        <a href="#projects" class="nav-link" data-section="projects">
+          <span class="nav-key">2</span> Projects
+        </a>
+        <a href="#craft" class="nav-link" data-section="craft">
+          <span class="nav-key">3</span> Craft &amp; Rhythm
+        </a>
+        <a href="#colophon" class="nav-link" data-section="colophon">
+          <span class="nav-key">4</span> Colophon
+        </a>
+      </nav>
+
+      <div class="header-tools">
+        <div class="coord-readout" id="coord-readout" title="Blueprint cursor coordinates">
+          <span>X: <strong id="coord-x">0420</strong></span>
+          <span>Y: <strong id="coord-y">0180</strong></span>
+          <span class="coord-scale">1:1 PX</span>
+        </div>
+        <button type="button" class="theme-btn" id="theme-toggle" aria-label="Toggle color theme (shortcut: t)">
+          <span class="theme-indicator" id="theme-indicator"></span>
+          <span id="theme-label">DARK DRAFT</span>
+          <kbd>T</kbd>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="drafting-board">
+    <!-- SECTION 01: ABOUT / HERO -->
+    <section id="about" class="sheet-section hero-section" aria-labelledby="hero-heading">
+      <div class="section-rail">
+        <span class="rail-index">01</span>
+        <span class="rail-label">SPEC // IDENTITY</span>
+      </div>
+
+      <div class="section-body">
+        <div class="hero-grid">
+          <div class="hero-main">
+            <div class="spec-pill-row">
+              <span class="spec-pill"><span class="dot live"></span> DULLES HIGH SCHOOL // CLASS OF 2029</span>
+              <span class="spec-pill">FOUNDER, DIGITAL DESIGN CLUB</span>
+              <span class="spec-pill">OPEN-SOURCE TOOLING</span>
+            </div>
+
+            <h1 id="hero-heading" class="hero-title">
+              Building sharp developer tools, accessible community sites, and tactile web systems.
+            </h1>
+
+            <p class="hero-lead">
+              I am <strong>Aariv Patel</strong>, a ninth-grade student at Dulles High School. I spend my evenings writing developer tools for multi-agent workflows, running a pro-bono web studio for community nonprofits, leading critiques at the Digital Design Club, and practicing classical tabla.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#projects" class="btn btn-primary">Explore 6 Shipped Systems</a>
+              <a href="https://github.com/draarivpatel-ui" target="_blank" rel="noopener noreferrer" class="btn btn-outline">GitHub (@draarivpatel-ui)</a>
+              <a href="https://aariv.me/studio-site/" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Pro-Bono Web Studio</a>
+            </div>
+          </div>
+
+          <aside class="hero-card" aria-label="Technical specification card">
+            <div class="monogram-display">
+              <svg viewBox="0 0 160 120" class="monogram-svg" role="img" aria-label="Geometric monogram a.">
+                <line x1="0" y1="20" x2="160" y2="20" class="guide-line" />
+                <line x1="0" y1="95" x2="160" y2="95" class="guide-line" />
+                <line x1="25" y1="0" x2="25" y2="120" class="guide-line" />
+                <line x1="135" y1="0" x2="135" y2="120" class="guide-line" />
+                <circle cx="65" cy="58" r="28" class="geo-stroke" />
+                <line x1="93" y1="30" x2="93" y2="92" class="geo-stroke" />
+                <rect x="112" y="76" width="14" height="14" class="geo-fill" />
+                <text x="8" y="15" class="svg-dim">R28.0</text>
+                <text x="110" y="15" class="svg-dim">FIG 1.0</text>
+              </svg>
+            </div>
+            <dl class="spec-list">
+              <div class="spec-row">
+                <dt>SCHOOL</dt>
+                <dd>Dulles High School (9th Grade)</dd>
+              </div>
+              <div class="spec-row">
+                <dt>LEADERSHIP</dt>
+                <dd>Digital Design Club &amp; MSA</dd>
+              </div>
+              <div class="spec-row">
+                <dt>PRIMARY STACK</dt>
+                <dd>TypeScript, HTML/CSS, Python, Godot 4</dd>
+              </div>
+              <div class="spec-row">
+                <dt>CURRENT FOCUS</dt>
+                <dd>Terminal muxes, telemetry &amp; hand-crafted CSS</dd>
+              </div>
+            </dl>
+          </aside>
+        </div>
+
+        <div class="metrics-strip" role="list" aria-label="Work highlights">
+          <div class="metric-cell" role="listitem">
+            <span class="metric-num">06+</span>
+            <span class="metric-caption">Open-source Stardance &amp; studio builds deployed with live demos</span>
+          </div>
+          <div class="metric-cell" role="listitem">
+            <span class="metric-num">04</span>
+            <span class="metric-caption">Community nonprofit websites designed, rebuilt, and maintained free of charge</span>
+          </div>
+          <div class="metric-cell" role="listitem">
+            <span class="metric-num">16</span>
+            <span class="metric-caption">Beats in Tintal cycle practiced daily on classical tabla alongside speech drills</span>
+          </div>
+          <div class="metric-cell" role="listitem">
+            <span class="metric-num">0 KB</span>
+            <span class="metric-caption">External CSS or JS runtime dependencies on this drafting board</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 02: PROJECTS & SYSTEMS -->
+    <section id="projects" class="sheet-section" aria-labelledby="projects-heading">
+      <div class="section-rail">
+        <span class="rail-index">02</span>
+        <span class="rail-label">INDEX // SYSTEMS</span>
+      </div>
+
+      <div class="section-body">
+        <div class="section-header-bar">
+          <div>
+            <p class="eyebrow">SHIPPED REPOSITORIES &amp; LIVE DEMOS</p>
+            <h2 id="projects-heading" class="section-title">Projects &amp; Systems</h2>
+          </div>
+
+          <div class="filter-bar" role="toolbar" aria-label="Filter projects by category">
+            <button type="button" class="filter-chip active" data-filter="all">All <span class="chip-count">6</span></button>
+            <button type="button" class="filter-chip" data-filter="devtools">Developer Tools <span class="chip-count">3</span></button>
+            <button type="button" class="filter-chip" data-filter="webos">Web Systems <span class="chip-count">2</span></button>
+            <button type="button" class="filter-chip" data-filter="games">Games <span class="chip-count">1</span></button>
+          </div>
+        </div>
+
+        <div class="projects-grid" id="projects-grid">
+          <!-- 1. Regatta -->
+          <article class="project-card" data-category="devtools" data-project="regatta">
+            <div class="card-top">
+              <span class="card-id">SYS-01 // ELECTRON + XTERM</span>
+              <span class="card-tag">Developer Tools</span>
+            </div>
+            <h3 class="card-title">Regatta</h3>
+            <p class="card-desc">
+              Multi-session terminal workspace built for supervising parallel coding agents. Pairs live PTY panes with git worktree isolation, diff inspection, and instant port previews so four concurrent agent runs never step on the same working tree.
+            </p>
+            <ul class="card-specs">
+              <li>Split-pane terminal multiplexer with per-branch git status badges</li>
+              <li>Automated worktree checkout and cleanup for parallel experiments</li>
+              <li>Built with Electron, TypeScript, node-pty, and xterm.js</li>
+            </ul>
+            <div class="card-links">
+              <a href="https://aariv.me/regatta/" target="_blank" rel="noopener noreferrer" class="card-link primary">Live Demo &amp; Video</a>
+              <a href="https://github.com/draarivpatel-ui/regatta" target="_blank" rel="noopener noreferrer" class="card-link">Source Repo</a>
+            </div>
+          </article>
+
+          <!-- 2. wasitme -->
+          <article class="project-card" data-category="devtools" data-project="wasitme">
+            <div class="card-top">
+              <span class="card-id">SYS-02 // TELEMETRY AUDIT</span>
+              <span class="card-tag">Developer Tools</span>
+            </div>
+            <h3 class="card-title">wasitme</h3>
+            <p class="card-desc">
+              Local-first authorship and session telemetry inspector that distinguishes human editor keystrokes from scripted agent bursts. Reads local git history and heartbeat logs to verify how every commit in a repository was produced.
+            </p>
+            <ul class="card-specs">
+              <li>Visual timeline comparing interactive editor cadence against batch writes</li>
+              <li>Zero-upload local analysis in the browser with exportable audit reports</li>
+              <li>Built for honest attribution in hybrid human-and-agent repositories</li>
+            </ul>
+            <div class="card-links">
+              <a href="https://aariv.me/wasitme/" target="_blank" rel="noopener noreferrer" class="card-link primary">Live Inspector</a>
+              <a href="https://github.com/draarivpatel-ui/wasitme" target="_blank" rel="noopener noreferrer" class="card-link">Source Repo</a>
+            </div>
+          </article>
+
+          <!-- 3. AarivOS -->
+          <article class="project-card" data-category="webos" data-project="aarivos">
+            <div class="card-top">
+              <span class="card-id">SYS-03 // BROWSER DESKTOP</span>
+              <span class="card-tag">Web Systems</span>
+            </div>
+            <h3 class="card-title">AarivOS</h3>
+            <p class="card-desc">
+              A ten-app desktop operating system running inside a single browser tab. Features a draggable window manager, persistent localStorage virtual filesystem, playable Web Audio synthesizer, paint canvas, and unix-style shell.
+            </p>
+            <ul class="card-specs">
+              <li>Shared virtual filesystem across Files, Notes, Text Editor, and Terminal</li>
+              <li>Keyboard-playable polyphonic synth (C4 to C5) with loop recorder</li>
+              <li>Reactive System Monitor tracking live DOM window counts and uptime</li>
+            </ul>
+            <div class="card-links">
+              <a href="https://aariv.me/webos/" target="_blank" rel="noopener noreferrer" class="card-link primary">Boot AarivOS</a>
+              <a href="https://github.com/draarivpatel-ui/webos" target="_blank" rel="noopener noreferrer" class="card-link">Source Repo</a>
+            </div>
+          </article>
+
+          <!-- 4. Pulse -->
+          <article class="project-card" data-category="webos" data-project="pulse">
+            <div class="card-top">
+              <span class="card-id">SYS-04 // NEW-TAB DASHBOARD</span>
+              <span class="card-tag">Web Systems</span>
+            </div>
+            <h3 class="card-title">Pulse</h3>
+            <p class="card-desc">
+              Keyboard-driven browser new-tab replacement with a live NASA Astronomy Picture of the Day integration, offline localStorage caching, customizable quick-link launchers, and a low-overhead HTML5 canvas starfield.
+            </p>
+            <ul class="card-specs">
+              <li>Resilient NASA APOD client with date time-travel and rate-limit fallback</li>
+              <li>Single-key shortcuts: <code>/</code> to search, <code>n</code> to add link, <code>t</code> for 12/24h clock</li>
+              <li>Full JSON import/export for portable bookmark configurations</li>
+            </ul>
+            <div class="card-links">
+              <a href="https://aariv.me/pulse-new-tab/" target="_blank" rel="noopener noreferrer" class="card-link primary">Launch New Tab</a>
+              <a href="https://github.com/draarivpatel-ui/pulse-new-tab" target="_blank" rel="noopener noreferrer" class="card-link">Source Repo</a>
+            </div>
+          </article>
+
+          <!-- 5. Devlog Timer -->
+          <article class="project-card" data-category="devtools" data-project="devlog-timer">
+            <div class="card-top">
+              <span class="card-id">SYS-05 // CADENCE WATCHMAN</span>
+              <span class="card-tag">Developer Tools</span>
+            </div>
+            <h3 class="card-title">Devlog Timer</h3>
+            <p class="card-desc">
+              Installable PWA session watchman built after losing hours to a 10-hour devlog cap. Visualizes the 8-hour warning threshold, tracks booth rating debt, preserves midnight rollover overflow, and guards against stray tab closures.
+            </p>
+            <ul class="card-specs">
+              <li>Live cap progress bar with 2-hour cadence nudges and 8-hour redline</li>
+              <li><code>beforeunload</code> protection when an active session crosses threshold</li>
+              <li>One-click markdown template generator and 5-entry timestamped log</li>
+            </ul>
+            <div class="card-links">
+              <a href="https://aariv.me/devlog-timer/" target="_blank" rel="noopener noreferrer" class="card-link primary">Open Timer</a>
+              <a href="https://github.com/draarivpatel-ui/devlog-timer" target="_blank" rel="noopener noreferrer" class="card-link">Source Repo</a>
+            </div>
+          </article>
+
+          <!-- 6. Garlic Panic -->
+          <article class="project-card" data-category="games" data-project="garlic-panic">
+            <div class="card-top">
+              <span class="card-id">SYS-06 // GODOT 4 + WEB MICROGAMES</span>
+              <span class="card-tag">Games</span>
+            </div>
+            <h3 class="card-title">Garlic Panic</h3>
+            <p class="card-desc">
+              Fast-paced WarioWare-style kitchen microgame arcade built in Godot 4 with a companion web edition. Chains five-second reflex challenges (clove smashing, pan tossing, flame dodging) at escalating BPM tempos.
+            </p>
+            <ul class="card-specs">
+              <li>Procedural vector sprites and synthesized Web Audio sound effects</li>
+              <li> Escalating speed tiers with instant keyboard and pointer controls</li>
+              <li>Dual build: native Godot 4 GDScript project + instant browser canvas version</li>
+            </ul>
+            <div class="card-links">
+              <a href="https://github.com/draarivpatel-ui/garlic-panic" target="_blank" rel="noopener noreferrer" class="card-link primary">Godot 4 Repo</a>
+              <a href="https://aariv.me/studio-site/" target="_blank" rel="noopener noreferrer" class="card-link">Studio Case Studies</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 03: DESIGN, SPEAKING & TABLA -->
+    <section id="craft" class="sheet-section" aria-labelledby="craft-heading">
+      <div class="section-rail">
+        <span class="rail-index">03</span>
+        <span class="rail-label">PRACTICE // CRAFT</span>
+      </div>
+
+      <div class="section-body">
+        <div class="section-header-bar">
+          <div>
+            <p class="eyebrow">BEYOND THE TERMINAL</p>
+            <h2 id="craft-heading" class="section-title">Design, Speaking &amp; Tabla</h2>
+          </div>
+          <p class="section-subtitle">
+            Software architecture gets sharper when paired with typographic critique, structured argumentation, and rhythmic discipline.
+          </p>
+        </div>
+
+        <div class="craft-columns">
+          <!-- Pillar 1: Digital Design Club & Nonprofit Studio -->
+          <article class="craft-card">
+            <div class="craft-index">03.A // VISUAL SYSTEMS</div>
+            <h3>Digital Design Club &amp; Community Web Studio</h3>
+            <p>
+              At Dulles High School, I founded the <strong>Digital Design Club</strong> to give students a workshop for real interface critique, Swiss grid layout, and HTML/CSS craftsmanship rather than slide-deck theory. We dissect spacing tokens, contrast ratios, and component states line by line.
+            </p>
+            <p>
+              Outside school hours, I run a pro-bono web studio that designs and ships fast, accessible websites for local community nonprofits and student initiatives such as <strong>MSA</strong>. Most small organizations are stuck with slow page builders or broken mobile layouts; replacing those with semantic, zero-cost static sites gives them permanent ownership.
+            </p>
+            <div class="craft-meta">
+              <span>Focus: WCAG AA contrast, responsive grids, zero-maintenance static hosting</span>
+            </div>
+          </article>
+
+          <!-- Pillar 2: Speech & Debate -->
+          <article class="craft-card">
+            <div class="craft-index">03.B // RHETORIC &amp; STRUCTURE</div>
+            <h3>Speech &amp; Debate</h3>
+            <p>
+              Competing in speech and debate trained me to compress complex technical ideas into clear, defensible arguments under strict time limits. When you have four minutes to establish a framework, weigh competing impacts, and answer cross-examination, every redundant sentence costs clarity.
+            </p>
+            <p>
+              I bring that same structural discipline to writing documentation, designing onboarding flows, and scoping software: state the premise clearly, surface the evidence early, and never hide a weak assumption behind decorative jargon.
+            </p>
+            <div class="craft-meta">
+              <span>Focus: Extemporaneous structure, analytical flows, concise technical writing</span>
+            </div>
+          </article>
+
+          <!-- Pillar 3: Classical Tabla -->
+          <article class="craft-card">
+            <div class="craft-index">03.C // PERCUSSION &amp; CADENCE</div>
+            <h3>Classical Tabla Practice</h3>
+            <p>
+              I study and practice North Indian classical tabla, working through traditional compositions (kaidas, relas, and tihais) across cyclic talas like <em>Tintal</em> (16 beats), <em>Jhaptal</em> (10 beats), and <em>Rupak</em> (7 beats). Tabla demands mathematical precision: every phrase must subdivide the beat cleanly and resolve squarely on the <em>sam</em> (beat one).
+            </p>
+            <div class="tala-visualizer" aria-label="Interactive Tintal 16-beat rhythmic cycle visualizer">
+              <div class="tala-header">
+                <span class="tala-title">TINTAL // 16-MATRA CYCLE (4 + 4 + 4 + 4)</span>
+                <button type="button" class="tala-btn" id="tala-step-btn">Step Matra (+1)</button>
+              </div>
+              <div class="tala-grid" id="tala-grid">
+                <span class="matra active" data-bol="Dha" data-vibhag="X (Sam)">1<em>Dha</em></span>
+                <span class="matra" data-bol="Dhin" data-vibhag="X">2<em>Dhin</em></span>
+                <span class="matra" data-bol="Dhin" data-vibhag="X">3<em>Dhin</em></span>
+                <span class="matra" data-bol="Dha" data-vibhag="X">4<em>Dha</em></span>
+                <span class="matra" data-bol="Dha" data-vibhag="2 (Tali)">5<em>Dha</em></span>
+                <span class="matra" data-bol="Dhin" data-vibhag="2">6<em>Dhin</em></span>
+                <span class="matra" data-bol="Dhin" data-vibhag="2">7<em>Dhin</em></span>
+                <span class="matra" data-bol="Dha" data-vibhag="2">8<em>Dha</em></span>
+                <span class="matra" data-bol="Dha" data-vibhag="0 (Khali)">9<em>Dha</em></span>
+                <span class="matra" data-bol="Tin" data-vibhag="0">10<em>Tin</em></span>
+                <span class="matra" data-bol="Tin" data-vibhag="0">11<em>Tin</em></span>
+                <span class="matra" data-bol="Ta" data-vibhag="0">12<em>Ta</em></span>
+                <span class="matra" data-bol="Ta" data-vibhag="3 (Tali)">13<em>Ta</em></span>
+                <span class="matra" data-bol="Dhin" data-vibhag="3">14<em>Dhin</em></span>
+                <span class="matra" data-bol="Dhin" data-vibhag="3">15<em>Dhin</em></span>
+                <span class="matra" data-bol="Dha" data-vibhag="3">16<em>Dha</em></span>
+              </div>
+              <p class="tala-readout" id="tala-readout">Matra 01 / 16 // Bol: Dha // Vibhag: X (Sam)</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 04: COLOPHON & SETUP -->
+    <section id="colophon" class="sheet-section" aria-labelledby="colophon-heading">
+      <div class="section-rail">
+        <span class="rail-index">04</span>
+        <span class="rail-label">COLOPHON // SPEC</span>
+      </div>
+
+      <div class="section-body">
+        <div class="section-header-bar">
+          <div>
+            <p class="eyebrow">ARCHITECTURE, TOKENS &amp; CONTROLS</p>
+            <h2 id="colophon-heading" class="section-title">Colophon &amp; Setup</h2>
+          </div>
+          <p class="section-subtitle">
+            Hand-crafted semantic HTML5 and custom CSS properties with a lightweight progressive enhancement script.
+          </p>
+        </div>
+
+        <div class="colophon-grid">
+          <div class="colophon-panel">
+            <h3 class="panel-heading">Color Tokens (Active Palette)</h3>
+            <p class="panel-note">
+              Styled after an architectural drafting sheet: obsidian slate in Dark Draft mode and warm archival vellum in Daylight Paper mode.
+            </p>
+            <div class="swatch-list">
+              <div class="swatch-item">
+                <span class="swatch-box swatch-bg"></span>
+                <div class="swatch-info">
+                  <strong>--bg-surface</strong>
+                  <span>Primary drafting board background</span>
+                </div>
+              </div>
+              <div class="swatch-item">
+                <span class="swatch-box swatch-elevated"></span>
+                <div class="swatch-info">
+                  <strong>--bg-elevated</strong>
+                  <span>Module cards and specification blocks</span>
+                </div>
+              </div>
+              <div class="swatch-item">
+                <span class="swatch-box swatch-accent"></span>
+                <div class="swatch-info">
+                  <strong>--accent-vermilion</strong>
+                  <span>Drafting vermilion callouts &amp; focus rings</span>
+                </div>
+              </div>
+              <div class="swatch-item">
+                <span class="swatch-box swatch-cyan"></span>
+                <div class="swatch-info">
+                  <strong>--accent-blueprint</strong>
+                  <span>Coordinate telemetry &amp; active indicators</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="colophon-panel">
+            <h3 class="panel-heading">Keyboard Navigation</h3>
+            <p class="panel-note">
+              Every section and tool on this page can be operated directly from the keyboard when no input field is focused.
+            </p>
+            <dl class="shortcut-table">
+              <div class="shortcut-row">
+                <dt><kbd>1</kbd> <kbd>2</kbd> <kbd>3</kbd> <kbd>4</kbd></dt>
+                <dd>Jump directly to About, Projects, Craft &amp; Rhythm, or Colophon</dd>
+              </div>
+              <div class="shortcut-row">
+                <dt><kbd>T</kbd></dt>
+                <dd>Toggle between Dark Draft and Daylight Paper themes (persisted)</dd>
+              </div>
+              <div class="shortcut-row">
+                <dt><kbd>F</kbd></dt>
+                <dd>Cycle through project category filters (All / DevTools / Web / Games)</dd>
+              </div>
+              <div class="shortcut-row">
+                <dt><kbd>M</kbd></dt>
+                <dd>Advance the 16-beat Tintal tabla cycle by one matra</dd>
+              </div>
+            </dl>
+          </div>
+
+          <div class="colophon-panel">
+            <h3 class="panel-heading">Typography &amp; Build Standards</h3>
+            <ul class="build-list">
+              <li>
+                <strong>Display &amp; Body Stack:</strong> System geometric neo-grotesque (<code>Inter</code>, <code>-apple-system</code>, <code>BlinkMacSystemFont</code>, <code>Segoe UI</code>) for zero network font latency and crisp subpixel rendering.
+              </li>
+              <li>
+                <strong>Technical &amp; Coordinate Stack:</strong> Tabular monospace (<code>JetBrains Mono</code>, <code>SF Mono</code>, <code>Menlo</code>, <code>Consolas</code>) with <code>font-variant-numeric: tabular-nums</code>.
+              </li>
+              <li>
+                <strong>Zero Dependencies:</strong> Plain <code>index.html</code>, <code>styles.css</code>, and <code>script.js</code> deployed via GitHub Pages at <a href="https://aariv.me/personal-page/">aariv.me/personal-page</a>.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-left">
+        <span class="monogram-sm">a.</span>
+        <span>Crafted by Aariv Patel // Dulles High School // MIT Licensed</span>
+      </div>
+      <div class="footer-links">
+        <a href="https://github.com/draarivpatel-ui/personal-page" target="_blank" rel="noopener noreferrer">Repository</a>
+        <a href="https://github.com/draarivpatel-ui" target="_blank" rel="noopener noreferrer">GitHub Profile</a>
+        <a href="https://aariv.me/field-notes-blog/" target="_blank" rel="noopener noreferrer">Field Notes Blog</a>
+        <a href="#about">Top of Sheet</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
