@@ -6,11 +6,10 @@
 
 I built this site for the Hack Club Stardance **"Personal Site"** mission. Rather than using a generic template or a heavy JavaScript framework, I designed my personal website from scratch in vanilla HTML, CSS, and JavaScript to look and behave like a **Swiss architectural drafting sheet** (`SHEET 01 / REV 2026.10`).
 
----
 
 ## Why I Built It This Way
 
-Over the past year I had built and shipped half a dozen separate developer tools, browser systems, and games across my GitHub repositories—plus pro-bono websites for student and community nonprofits—without having a single home page that tied all of my work together.
+Over the past year I had built and shipped half a dozen separate developer tools, browser systems, and games across my GitHub repositories - plus pro-bono websites for student and community nonprofits - without having a single home page that tied all of my work together.
 
 When I sat down to design my personal site for Stardance, I wanted the page itself to reflect the three disciplines I spend the most time on outside of writing code:
 1. **Typographic grid systems** from founding and running the **Digital Design Club** at Dulles High School.
@@ -19,7 +18,6 @@ When I sat down to design my personal site for Stardance, I wanted the page itse
 
 Designing the page as an interactive drafting board let me combine a live coordinate readout, numbered specification rails (`01` through `04`), filterable architecture cards for my shipped software, and an interactive **16-beat *Tintal* tabla cycle stepper** on a single zero-dependency sheet.
 
----
 
 ## Features & What Is on the Sheet
 
@@ -50,7 +48,6 @@ Designing the page as an interactive drafting board let me combine a live coordi
   - `F` -> Cycle through project category filters (`All` -> `Developer Tools` -> `Web Systems` -> `Games`)
   - `M` -> Advance one beat (*matra*) in the 16-beat *Tintal* tabla cycle
 
----
 
 ## What Was Tricky to Build
 
@@ -59,7 +56,6 @@ Designing the page as an interactive drafting board let me combine a live coordi
 2. **Keeping Layout Shifts Near Zero During Project Filtering**:
    When filtering the 6-card project grid down to 2 cards, sudden height collapses made the scroll position jump if you were triggering the `F` shortcut from the keyboard. Updating the visible card count badge and toggling `[hidden]` cleanly while keeping the section rail anchored prevented jarring viewport jumps.
 
----
 
 ## How to Run Locally
 
@@ -78,7 +74,6 @@ python3 -m http.server 8080
 - `styles.css` - Custom CSS design tokens (`Dark Draft` & `Daylight Paper`), responsive blueprint grid, and print-inspired typography
 - `script.js` - Project category filter, interactive *Tintal* matra stepper, live cursor coordinate tracker, and keyboard shortcut router
 - `screenshot.png` - Full-page screenshot of the drafting board
-- `BUILD-LOG.md` - Step-by-step development notes
 
 ## License
 
