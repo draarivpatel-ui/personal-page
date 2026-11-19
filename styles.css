@@ -7,7 +7,6 @@
 [data-theme="dark"] {
   --bg-surface: #0b0f17;
   --bg-elevated: #111826;
-  --bg-card-hover: #162032;
   --bg-header: rgba(11, 15, 23, 0.88);
   --text-primary: #f4f1ea;
   --text-secondary: #a8b3c5;
@@ -29,7 +28,6 @@
 [data-theme="light"] {
   --bg-surface: #f5f2eb;
   --bg-elevated: #ebe6dc;
-  --bg-card-hover: #e2dcd0;
   --bg-header: rgba(245, 242, 235, 0.9);
   --text-primary: #141821;
   --text-secondary: #3e4859;
